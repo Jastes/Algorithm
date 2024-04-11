@@ -17,3 +17,12 @@ int solution(int a, int b) {
     
     return (ab == ba) ? ab : (ab > ba) ? ab : ba;
 }
+
+/*
+    //자릿수 구하는 코드.. 확인 부탁함
+    int a1 = floor(log10(a)+1), b1 = floor(log10(b)+1);
+    int num1 = a*pow(10, b1) + b;
+    int num2 = b*pow(10, a1) + a;
+    int answer = (num1>num2) ? num1 : num2;
+    
+*/
