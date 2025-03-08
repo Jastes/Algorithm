@@ -6,18 +6,16 @@ int main(){
     ios::sync_with_stdio(false);
     cin.tie(nullptr);
 
-    int a, b;
+    long long a, b;
 
     cin >> a >> b;
 
     if(a > b){
-        a = a^b;
-        b = a^b;
-        a = a^b;
+        swap(a, b);
     }
 
     cout << ((a == b) ? 0 : b - a - 1) << '\n';
-    for(int i=a+1; i<b; i++){
+    for(long long i=a+1; i<b; i++){
         cout << i << ' ';
     }
 }
